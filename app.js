@@ -38,16 +38,12 @@ app.get('/', function(req,res){
 
 // require png-word.
 var pw = require("png-word")();
+var r = require("random-word")("0123456789");
 
 // refresh png number.
 app.get('/refresh',function(req,res){
 
- var numtxt = "";
- for(var i=0;i<4;i++){
-	numtxt += parseInt(Math.random()*9);	
- }
-
- req.session.validat_num = numtxt;
+ var numtxt = req.session.validat_num = r.random(4);
 
  pw.createPNG(numtxt,function(pngnum){
   res.send(pngnum);	
