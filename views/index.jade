@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 validate num demo 
+  h3=msg
+
+  form(action="/")
+    label
+      img(src="/refresh")
+    input(name="validat_num")
+    input(type="submit",value="validate")
+
