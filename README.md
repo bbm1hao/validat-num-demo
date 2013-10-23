@@ -6,7 +6,7 @@ validat number demo.
 screen
 ======
 
-![demo](https://raw.github.com/brighthas/validat-num-demo/master/demo.png)
+![demo](https://raw.github.com/brighthas/validat-num-demo/master/out.gif)
 
 see
 ===
